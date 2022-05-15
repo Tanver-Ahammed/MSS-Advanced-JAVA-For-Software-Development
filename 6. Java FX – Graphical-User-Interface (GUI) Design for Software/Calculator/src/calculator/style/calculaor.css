@@ -1,0 +1,9 @@
+.number-button{
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+
+.other-button{
+    -fx-font-size: 15px;
+}
+

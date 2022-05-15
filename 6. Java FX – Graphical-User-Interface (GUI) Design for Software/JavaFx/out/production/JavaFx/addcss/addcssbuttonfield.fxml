@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<GridPane fx:controller="buttonfielddemo.MainButton"
+          xmlns:fx="http://javafx.com/fxml" vgap="20"
+            stylesheets="@Style.css">
+
+    <padding>
+        <Insets top="20" left="20"/>
+    </padding>
+
+    <Button text="This is a Button." GridPane.rowIndex="0" GridPane.columnIndex="0" wrapText="true">
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/media/Movie24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Button text="JAVA" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Button text="Spring" GridPane.rowIndex="0" GridPane.columnIndex="2"
+            style="-fx-background-color: blue; -fx-text-fill: white"/>
+    <Button text="JavaFX" id="bt4" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+    <Button text="Swing" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
+
+    <Label text="This is a Text." GridPane.rowIndex="1" GridPane.columnIndex="0" wrapText="true">
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/general/Print24.gif"/>
+            </ImageView>
+        </graphic>
+    </Label>
+
+    <fx:define>
+        <ToggleGroup fx:id="colorToggleGroup"/>
+    </fx:define>
+
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="0" text="Red" toggleGroup="$colorToggleGroup" wrapText="true"/>
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="1" text="Green" toggleGroup="$colorToggleGroup" wrapText="true"/>
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="2" text="Blue" toggleGroup="$colorToggleGroup" wrapText="true"/>
+
+    <VBox GridPane.rowIndex="3" GridPane.columnIndex="0">
+        <CheckBox text="Engineering" wrapText="true"/>
+        <CheckBox text="Life Science" wrapText="true"/>
+        <CheckBox text="Science" wrapText="true"/>
+        <CheckBox text="Business" wrapText="true"/>
+    </VBox>
+
+    <HBox GridPane.rowIndex="3" GridPane.columnIndex="1">
+        <ToggleButton text="YES" wrapText="true"/>
+        <ToggleButton text="NO" wrapText="true"/>
+        <ToggleButton text="Very Good" wrapText="true"/>
+    </HBox>
+
+    <TextField GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <PasswordField GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+
+    <ComboBox GridPane.rowIndex="5" GridPane.columnIndex="0" editable="true">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="ICT"/>
+                <String fx:value="CSE"/>
+                <String fx:value="TE"/>
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="ICT"/>
+        </value>
+    </ComboBox>
+
+    <ChoiceBox GridPane.rowIndex="5" GridPane.columnIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="FTNS"/>
+                <String fx:value="ESRM"/>
+                <String fx:value="CPS"/>
+                <String fx:value="BGE"/>
+                <String fx:value="BMB"/>
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="ESRM"/>
+        </value>
+    </ChoiceBox>
+
+    <Slider GridPane.columnIndex="0" GridPane.rowIndex="6"
+            GridPane.columnSpan="3" min="-100" max="500" showTickLabels="true" showTickMarks="true"
+            minorTickCount="50" snapToTicks="false"/>
+
+    <Spinner GridPane.columnIndex="3" GridPane.rowIndex="6" min="-5" max="400"
+             initialValue="50"/>
+
+    <ColorPicker GridPane.rowIndex="6" GridPane.columnIndex="4"/>
+
+    <Accordion GridPane.columnIndex="0" GridPane.rowIndex="7" expandedPane="$tp1">
+        <panes>
+            <TitledPane fx:id="tp1" text="Engineering">
+                <Label text="Information and Communication Technology"/>
+                <Label text="Information and Communication Technology"/>
+            </TitledPane>
+
+            <TitledPane fx:id="tp3" text="Life Science">
+                <Label text="Criminology and Police Science"/>
+            </TitledPane>
+
+            <TitledPane fx:id="tp4" text="Science">
+                <Label text="Chemistry"/>
+            </TitledPane>
+        </panes>
+    </Accordion>
+
+
+
+</GridPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

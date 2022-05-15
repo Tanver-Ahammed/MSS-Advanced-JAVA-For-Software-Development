@@ -1,0 +1,112 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:controller="layouts.gridpane.Controller"
+            xmlns:fx="http://javafx.com/fxml"
+            style="-fx-border-color: green; -fx-border-width: 5">
+
+
+    <top>
+        <VBox alignment="CENTER" style="-fx-border-color: red; -fx-border-width: 5">
+            <Label text="Welcome to JavaFx!!" textFill="darkblue">
+                <font>
+                    <Font name="Time New Roman bold" size="70"/>
+                </font>
+            </Label>
+            <Label text="Do you wish to continue?" textFill="indigo">
+                <font>
+                    <Font name="Time New Roman bold" size="40"/>
+                </font>
+            </Label>
+
+        </VBox>
+    </top>
+
+    <left>
+        <VBox alignment="CENTER" style="-fx-border-color: red; -fx-border-width: 5">
+            <Label text="Welcome to JavaFx!!" textFill="darkblue">
+                <font>
+                    <Font name="Time New Roman bold" size="40"/>
+                </font>
+            </Label>
+
+            <Label text="Do you wish to continue?" textFill="indigo">
+                <font>
+                    <Font name="Time New Roman bold" size="30"/>
+                </font>
+            </Label>
+
+        </VBox>
+    </left>
+
+
+    <right>
+        <VBox alignment="CENTER" style="-fx-border-color: red; -fx-border-width: 5">
+            <Label text="Welcome to Java Fx!!" textFill="indigo">
+                <font>
+                    <Font name="Time New Roman bold" size="40"/>
+                </font>
+            </Label>
+
+            <Label text="Do you wish to continue?" textFill="darkblue">
+                <font>
+                    <Font name="Time New Roman bold" size="30"/>
+                </font>
+            </Label>
+
+        </VBox>
+    </right>
+
+    <center>
+        <VBox alignment="CENTER" style="-fx-border-color: red; -fx-border-width: 5">
+            <Label text="Welcome to Java Fx!!" textFill="darkmagenta">
+                <font>
+                    <Font name="Time New Roman bold" size="40"/>
+                </font>
+            </Label>
+
+            <Label text="Do you wish to continue?" textFill="darkslateblue">
+                <font>
+                    <Font name="Time New Roman bold" size="30"/>
+                </font>
+            </Label>
+
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="BOTTOM_LEFT" spacing="20" style="-fx-border-color: red; -fx-border-width: 5">
+
+            <padding>
+                <Insets bottom="20"/>
+            </padding>
+
+            <Button text="Okay" GridPane.rowIndex="1" prefWidth="100"/>
+            <Button text="Cancel" GridPane.rowIndex="1" prefWidth="100"/>
+            <Button text="Help" GridPane.rowIndex="2" prefWidth="100"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

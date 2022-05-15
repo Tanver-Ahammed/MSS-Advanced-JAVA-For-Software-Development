@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<FlowPane fx:controller="layouts.flowpane.Controllers"
+          xmlns:fx="http://javafx.com/fxml" orientation="VERTICAL">
+
+    <padding>
+        <Insets top="20" left="20"/>
+    </padding>
+
+
+    <Button text="ICT"/>
+    <Button text="CSE"/>
+    <Button text="TE"/>
+    <Button text="CPS"/>
+    <Button text="PHYSICS"/>
+    <Button text="CHEMISTRY"/>
+    <Button text="MATH"/>
+    <Button text="BIOLOGY"/>
+    <Button text="BGE"/>
+    <Button text="BMB"/>
+    <Button text="ENGLISH"/>
+
+</FlowPane>
